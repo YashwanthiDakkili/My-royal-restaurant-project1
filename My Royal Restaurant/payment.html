@@ -84,10 +84,28 @@
                 </div>
             </div>
         </div>
-        <input type="submit" value="proceed to checkout" class="submit-btn">
+        <button type="submit" value="proceed to checkout" class="submit-btn" onclick="openPopup()">Submit</button>
+    
+    <div class="popup" id="popup">
+        <img src="/images/404-tick (1).png">
+        <h2>Thank You!</h2>
+        <p>your details has been success submitted.Thanks!</p>
+        <button type="button" onclick="closePopup()">OK</button>
+    </div>
+    
     </form>
 </div>    
 
+<script>
+    let popup=document.getElementById("popup"); 
 
+    function openpopup(){
+        popup.classList.add("open-popup");
+    }
+    function closepopup(){
+        popup.classList.remove("close-popup");
+    }
+
+</script>
 </body>
 </html>
